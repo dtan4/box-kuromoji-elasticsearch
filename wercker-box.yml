@@ -8,7 +8,7 @@ keywords:
   - kuromoji
   - japanese search
 script: |
-  ./script.sh
+  BOX_HOST=$$HOST$$ ./script.sh
 env:
   WERCKER_ELASTICSEARCH_VERSION: 1.5.2
   WERCKER_ELASTICSEARCH_URL: $$HOST$$:9200
